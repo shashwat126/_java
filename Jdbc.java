@@ -9,7 +9,7 @@ public class Jdbc {
         
     try{
         Class.forName("com.mysql.jdbc.Driver");
-        Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/world","root","123456");
+        Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/world","root","");
         Statement stmt=con.createStatement();
         ResultSet rs=stmt.executeQuery("select *from deatil");
         while(rs.next())
